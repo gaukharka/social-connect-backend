@@ -1,8 +1,8 @@
 // entry file
 import express, {Express} from 'express'
-import { SocialConnectServer } from './setupServer'
-import dbConnection from './setupDatabase'
-import { config } from './config'
+import { SocialConnectServer } from '@root/setupServer'
+import dbConnection from '@root/setupDatabase'
+import { config } from '@root/config'
 
 class Application {
     public initialize(): void{

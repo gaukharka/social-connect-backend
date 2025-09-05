@@ -6,12 +6,12 @@ import hpp from 'hpp'
 import cookieSession from 'cookie-session'
 import HTTP_STATUS from 'http-status-codes';
 import compression from 'compression'
-import {config} from './config'
 import { Server } from 'socket.io'
 import { createClient } from 'redis'
 import { createAdapter } from '@socket.io/redis-adapter'
-import applicationRoutes from './routes'
-import { CustomError, IErrorResponse } from './shared/globals/helpers/error-handler'
+import applicationRoutes from '@root/routes'
+import { CustomError, IErrorResponse } from '@global/helpers/error-handler'
+import { config } from '@root/config'
 
 const SERVER_PORT = 5000;
 
@@ -106,6 +106,8 @@ export class SocialConnectServer{
         httpServer.listen(SERVER_PORT, () => {console.log(`Server running on port  ${SERVER_PORT}`)})
     }
 
-    private socketIOConnections(io: Server): void{}
+    private socketIOConnections(io: Server): void{
+      console.log('socket ')
+    }
 
 }
