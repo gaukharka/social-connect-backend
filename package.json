@@ -42,6 +42,7 @@
     "bullmq": "^5.58.5",
     "cloudinary": "^2.7.0",
     "dotenv": "^17.2.2",
+    "joi": "^18.0.1",
     "mongoose": "^8.18.0",
     "redis": "^5.8.2",
     "socket.io": "^4.8.1",
